@@ -74,6 +74,9 @@ body {
 .btn-primary {
   background-color: #675afe;
 }
+.btn-accent {
+  background-color: #FCA74D;
+}
 .btn-big {
   height: 45px;
 }
@@ -266,7 +269,7 @@ body {
 /* sec */
 .sec {
   display: flex;
-  margin: 0 auto;
+  margin: 4rem auto;
   max-width: 1206px;
   justify-content: space-between;
   box-sizing: border-box;
@@ -289,10 +292,10 @@ body {
 /* box */
 .box {
   background-color: #F5F5FF;
-  height: 671px;
   width: 1088px;
   margin: 0 auto;
   text-align: center;
+  border-radius: 10px;
 }
 .box h1 {
   margin: 0;
@@ -312,5 +315,111 @@ body {
   font-size: 17px;
   color: #7c7a8f;
   max-width: 400px;
+  margin: 0 auto;
+}
+.bigicon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+
+.bigicon-h3 {
+  margin-top: 4rem;
+  color: blue;
+  font-size: 2rem;
+}
+.bigicon-para {
+  color: blue;
+  font-size: 1.5rem;
+}
+.bigicon {
+  display: flex;
+}
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 70px;
+  right: 20px
+}
+.arrow-container p {
+  color: blue;
+  font-size: 6rem;
+  padding: 0 10px;
+  position: relative;
+  bottom: 19px
+}
+.arrow-container svg {
+  fill: blue;
+}
+.bigicon-group {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .bigicon-group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+}
+/* grid */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* callout */
+.callout {
+  padding: 10rem;
+  border-radius: 15px;
+  background-color: #6D61FE;
+  color: white;
+  max-width: 1031px;
+  margin: 0 auto;
+}
+.callout h2 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  letter-spacing: 1px;
+}
+.callout p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+  width: 120px;
+  margin: 0 2rem;
+}
+.callout-content {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .callout-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+/* footer */
+.footer {
+  display: flex;
+  max-width: 1031px;
   margin: 0 auto;
 }
